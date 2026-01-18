@@ -1,7 +1,8 @@
+import '../components/Results.css'
 
 function Result(){
     return(
-        <div>
+        <div className='results'>
 
 
         <h1>Quiz Completed!</h1>

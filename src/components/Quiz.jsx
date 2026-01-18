@@ -78,7 +78,7 @@ function Quiz() {
 
             <div className='btn-holder'>
                 <button className="Previous btn" onClick={Back} disabled ={questionNumber===0}>Previous</button>
-                <button className="gotoNext btn" onClick={Next} disabled = {!selectedAnswer}>Next</button>
+                <button className="gotoNext btn" onClick={Next} disabled = {!selectedAnswer}> {questionNumber === QuestionBank.length-1? "Finish Quiz": "Next"}</button>
             </div>
         </>
     );
